@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    
+
+}
+.box {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.img-box {
+    width: 300px;;
+    height: 300px;
+    /* background-color: hsl(244, 38%, 16%); */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsl(277, 64%, 61%,0.5);
+    
+}
+
+.item {
+    width: 300px;
+    height: 300px;
+    background-color: hsl(244, 38%, 16%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 0 50px;
+    
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin-top: 40px;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+.description{
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsl(0, 0%, 100%,0.70);
+    font-size: 0.8rem;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.stats h3{
+    
+    color:hsl(0, 0%, 100%);
+    margin-bottom: 0px;
+}
+.stats p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 100%,0.6);
+    margin-top:0 ;
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width:500px){
+    .box{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        
+    }
+    .img-box{
+        width: 300px;
+        height: 200px;
+        max-width: 90%;
+        border-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-Right-radius: 15px;
+    }
+
+    .item{
+        width: 300px;
+        height: 350px;
+        max-width: 90%;
+        padding: 0;
+        border-radius:0 ;
+        border-bottom-left-radius: 15px;
+        border-bottom-Right-radius: 15px;
+        
+    }
+    h2{
+        margin-top: 20px;
+        font-size: 1.4rem;
+    }
+    .text{
+        padding: 0 20px;
+        text-align: center;
+    }
+    .stats{
+        flex-direction: column;
+        
+    }
+    .companies h3{
+        margin: 0;
+    }
+    .companies p{
+        margin: 0;
+        padding-top: 0;
+    }
+    .templates h3{
+        margin-top: 10px;
+    }
+    .templates p{
+        margin: 0;
+        padding-top: 0;
+    }
+    .queries h3{
+        margin-top: 10px;
+    }
+    .queries p{
+        margin: 0;
+        padding-top: 0;
+    }
+}
